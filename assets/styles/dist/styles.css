@@ -1,0 +1,268 @@
+/* Normalize */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Cabin", sans-serif;
+}
+
+/* End of Normalize */
+/* Header */
+.header {
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  background-color: #0F1923;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 100px;
+  /* Logo */
+  /* End of Logo */
+  /* Nav */
+  /* End of Navbar */
+  /* SocialNav */
+  /* End of SocialNav */
+  /* End of Header */
+}
+.header__logo {
+  width: 227px;
+  height: 50px;
+}
+.header__ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  gap: 0 20px;
+}
+.header__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.header__link:hover {
+  color: rgb(250, 200, 25);
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 0 10px;
+}
+.header__socialItem {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: #323c46;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+.header__socialItem:hover {
+  background-color: #fac819;
+}
+.header__socialItem:hover i {
+  color: #000;
+}
+.header__socialLink {
+  text-decoration: none;
+}
+.header__socialLink i {
+  font-size: 18px;
+  color: white;
+}
+
+/* Main */
+.main {
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 105px;
+  padding-right: 105px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.7)), to(rgba(255, 255, 255, 0.7))), url("/assets/img/bg-picture.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("/assets/img/bg-picture.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-attachment: fixed;
+  background-origin: border-box;
+}
+.main__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 360px;
+  background-color: #FFF;
+  height: 520px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  padding: 30px;
+}
+.main__formTitle {
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 25px;
+}
+.main__formInputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main__formInput {
+  outline: 0;
+  background: transparent;
+  -webkit-transition: border-color 0.2s;
+  transition: border-color 0.2s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px 0;
+  margin: 0 0 15px;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #d1d1d1;
+  letter-spacing: 0;
+  height: 43px;
+  font-size: 18px;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+.main__formInput:focus {
+  padding-bottom: 25px;
+  font-size: 12px;
+  border-bottom: 2px solid rgb(230, 180, 25);
+}
+.main__formInput:focus::-webkit-input-placeholder {
+  color: rgb(230, 180, 25);
+}
+.main__formInput:focus::-moz-placeholder {
+  color: rgb(230, 180, 25);
+}
+.main__formInput:focus:-ms-input-placeholder {
+  color: rgb(230, 180, 25);
+}
+.main__formInput:focus::-ms-input-placeholder {
+  color: rgb(230, 180, 25);
+}
+.main__formInput:focus::placeholder {
+  color: rgb(230, 180, 25);
+}
+.main__inputSubmit {
+  margin-top: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50px;
+  text-align: center;
+  background-color: rgb(250, 200, 25);
+  padding: 15px 25px;
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+.main__inputSubmit:hover {
+  background: rgb(230, 180, 25);
+}
+.main__content {
+  width: 800px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 120px;
+}
+.main__contentTitle {
+  font-size: 40px;
+}
+.main__contentLine {
+  content: "";
+  width: 100px;
+  background: #fac819;
+  border-radius: 10px;
+  height: 4px;
+  margin: 20px 20px;
+}
+.main__contentdescription {
+  font-size: 20px;
+  color: #555555;
+  text-align: center;
+  line-height: 1.8;
+}
+
+/* End of Main *//*# sourceMappingURL=styles.css.map */

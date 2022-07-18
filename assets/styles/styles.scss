@@ -1,0 +1,228 @@
+/* Normalize */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cabin', sans-serif;
+
+}
+
+/* End of Normalize */
+/* Header */
+.header {
+    width: 100%;
+    height: 80px;
+    padding: 0 30px;
+    background-color: #0F1923;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0 100px;
+
+
+
+    /* Logo */
+
+    &__logo {
+        width: 227px;
+        height: 50px;
+    }
+
+    /* End of Logo */
+    /* Nav */
+    &__ul {
+        display: flex;
+        flex-direction: row;
+        gap: 0 20px;
+    }
+
+    &__item {
+        display: flex;
+        list-style-type: none;
+    }
+
+    &__link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.25rem;
+
+        &:hover {
+            color: rgb(250, 200, 25);
+            transition: .3s linear;
+        }
+    }
+
+    /* End of Navbar */
+    /* SocialNav */
+    &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0 10px;
+    }
+
+    &__socialItem {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+        border-radius: 50%;
+        background-color: #323c46;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+
+        &:hover {
+            background-color: #fac819;
+
+        }
+
+        &:hover i {
+            color: #000;
+        }
+    }
+
+    &__socialLink {
+        text-decoration: none;
+
+
+
+
+        i {
+            font-size: 18px;
+            color: white;
+
+
+
+
+        }
+
+    }
+
+    /* End of SocialNav */
+    /* End of Header */
+
+}
+
+/* Main */
+.main {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 105px;
+    padding-right: 105px;
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('/assets/img/bg-picture.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;
+    background-attachment: fixed;
+    background-origin: border-box;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 360px;
+        background-color: #FFF;
+        height: 520px;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    &__formTitle {
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 25px;
+    }
+
+    &__formInputs {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+
+    }
+
+    &__formInput {
+        outline: 0;
+        background: transparent;
+        transition: border-color 0.2s;
+        display: flex;
+        padding: 8px 0;
+        margin: 0 0 15px;
+        border-radius: 0;
+        border: none;
+        border-bottom: 2px solid #d1d1d1;
+        letter-spacing: 0;
+        height: 43px;
+        font-size: 18px;
+        transition: .2s linear;
+
+        &:focus {
+            padding-bottom: 25px;
+            font-size: 12px;
+            border-bottom: 2px solid rgb(230, 180, 25);
+        }
+
+        &:focus::placeholder {
+            color: rgb(230, 180, 25);
+        }
+
+    }
+
+    &__inputSubmit {
+        margin-top: 20px;
+        font-size: 20px;
+        border: none;
+        border-radius: 50px;
+        text-align: center;
+        background-color: rgb(250, 200, 25);
+        padding: 15px 25px;
+        color: #fff;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0 10px 20px rgb(0 0 0 / 19%), 0 6px 6px rgb(0 0 0 / 23%);
+
+        &:hover {
+            background: rgb(230, 180, 25);
+        }
+    }
+
+    &__content {
+        width: 800px;
+        flex-direction: column;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0 120px;
+    }
+
+    &__contentTitle {
+        font-size: 40px;
+    }
+
+    &__contentLine {
+        content: '';
+        width: 100px;
+        background: #fac819;
+        border-radius: 10px;
+        height: 4px;
+        margin: 20px 20px;
+    }
+
+    &__contentdescription{
+        font-size: 20px;
+        color: #555555;
+        text-align: center;
+        line-height: 1.8;
+    }
+}
+
+
+/* End of Main */
